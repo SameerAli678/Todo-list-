@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .sam {
+        font-size: larger;
+        color: blue;
+      }
+      ul  li span{
+   position: absolute;
+   right: 40px;
+      }
+      ul li{
+        width: full;
+        padding-left: 400px;
+
+
+      }
+    </style>
+
+    <title>Todo list</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center m-auto w-full h-full ">
+      <div
+        class="flex flex-col w-[500px] py-20 h-fit border-2 border-solid rounded-full gap-y-3 bg-purple-300 items-center justify-center m-auto relative"
+      >
+        <h1>Todo List</h1>
+        <div class="flex flex-row justify-center items-center gap-x-2">
+          <input
+            class="flex w-full text-md rounded-md bg-transparent bg-white focus:border-none ring-0 outline-none placeholder:text-xs px-2 py-1 border-none"
+            placeholder="Add Task"
+            type="text"
+            id="inputbox"
+          />
+          <button
+            class="flex w-[30px] px-6 py-1 text-lg bg-blue-500 hover:bg-blue-600 justify-center items-center rounded-md"
+            onclick="addtask()"
+          >
+            Add
+          </button>
+        </div>
+        <ul
+          class="flex flex-col justify-between text-lg  w-full"
+          id="listcontainer"
+        >
+          <!-- <li>sameer</li> -->
+          <!-- <i class="fa-solid fa-trash-can" ></i> -->
+        </ul>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+
+    <!-- <div class=" w-[300px] h-[100px] border-2 border-solid border-black  bg-purple-300"> box</div> -->
+  </body>
+</html>
